@@ -1,6 +1,5 @@
-import { ImportedClass } from './imported-example.js';
-console.log('main works')
+import { MenuToggle } from './menuToggle.js';
 
-const testing = new ImportedClass();
+const toggle = new MenuToggle();
 
-testing.doesItWork();
+toggle.toggleMenu();
