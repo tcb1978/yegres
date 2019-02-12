@@ -1,5 +1,5 @@
-import { MenuToggle } from './menuToggle.js';
+import { ImportedClass } from './importedClass.js';
 
-const toggle = new MenuToggle();
+const newclass = new ImportedClass();
 
-toggle.toggleMenu();
+newclass.itWorks();
