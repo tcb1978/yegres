@@ -1,0 +1,47 @@
+.header {
+
+  &__inner {
+    background-color: green;
+    display: flex;
+    flex-direction: row;
+    margin: 0 auto;
+    max-width: 90%;
+    padding-top: 1.5rem;
+  }
+
+  &__figure {
+    background-color: pink;
+    flex: 1;
+  }
+
+  &__nav {
+    background-color: orange;
+    flex: 4;
+
+    &-list {
+      align-items: center;
+      display: flex;
+      flex-flow: row;
+      height: 100%;
+      justify-content: flex-start;
+
+      &-item {
+        text-align: center;
+        width: calc(19.33333% - 15px);
+      }
+    }
+  }
+
+  &__controls {
+    background-color: orangered;
+    display: flex;
+    flex: 1;
+
+    &-figure {}
+
+    &-link {}
+
+    &-image {}
+  }
+
+}

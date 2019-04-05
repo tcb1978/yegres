@@ -4,7 +4,7 @@
 <head>
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title>Page Title</title>
+  <title>Yo Yegres!!!</title>
   <meta
   name="viewport"
   content="
@@ -16,11 +16,104 @@
 </head>
 
 <body>
-  <header class="header"></header>
+  <header class="header">
+    <div class="header__inner" role="none">
+      <figure class="header__figure">
+        <a href="/" class="header__link">
+          <img src="https://via.placeholder.com/60" alt="Logo" class="header_image">
+        </a>
+      </figure>
+      <nav class="header__nav">
+        <ul class="header__nav-list">
+          <li class="header__nav-list-item header__nav-list-item--home">Home</li>
+          <li class="header__nav-list-item header__nav-list-item--offers">Offers</li>
+          <li class="header__nav-list-item header__nav-list-item--marketing">Marketing</li>
+        </ul>
+      </nav>
+      <div class="header__controls" role="none">
+        <figure class="header__controls-figure">
+          <a href="/" class="header__controls-link">
+            <img src="https://via.placeholder.com/30" alt="Logo" class="header__controls-image">
+          </a>
+        </figure>
+        <p class="header header_status">My Account</p>
+      </div>
+    </div>
+  </header>
   <main class="main">
-    <section class="section">
-      <h1>Hello World!</h1>
-    </section>
+    <div class="main__inner">
+      <ul class="main__nav-list">
+        <li class="main__nav-list-item main__nav-list-item--active">
+          <a class="main__nav-link" href="#">Dashboard</a>
+        </li>
+        <li class="main__nav-list-item">
+          <a class="main__nav-link" href="#">Transactions</a>
+        </li>
+        <li class="main__nav-list-item">
+          <a class="main__nav-link" href="#">Revenue</a>
+        </li>
+        <li class="main__nav-list-item">
+          <a class="main__nav-link" href="#">Maps</a>
+        </li>
+        <li class="main__nav-list-item">
+          <a class="main__nav-link" href="#">Visitor Loyalty</a>
+        </li>
+        <li class="main__nav-list-item">
+          <a class="main__nav-link" href="#">Emails</a>
+        </li>
+        <li class="main__nav-list-item">
+            <a class="main__nav-link" href="#">Social Media</a>
+        </li>
+        <li class="main__nav-list-item">
+            <a class="main__nav-link" href="#">ROI</a></li>
+        <li class="main__nav-list-item">
+            <a class="main__nav-link" href="#">Customers</a>
+        </li>
+      </ul>
+      <section class="main-section">
+        <div class="main-section__masthead">
+          <h1 class="main-section__primary">A Family Thrift Center Inc. <span>Transactions</span></h1>
+          <button class="main-section__button">A Family Thrift Center Inc. - main account</button>
+        </div>
+        <h2 class="main-section__secondary">Search your Transactions</h2>
+        <p class="main-section main-section_paragraph">
+          To search your transactions enter the start and end date, the customers phone number and optionally their first and last name. To reset the search, click 'Reset Search' next to the search button.
+        </p>
+        <form action="" class="main-section__form">
+          <label for="phone">Phone (Required)</label>
+          <div class="main-section_form-row">
+            <input type="text" name="phone" id="phone">
+          </div>
+          <label for="start">Date Range (Required)</label>
+          <div class="main-section_form-row">
+            <input
+              type="date"
+              id="start"
+              name="trip-start"
+              value="2018-07-22"
+              min="2018-01-01"
+              max="2018-12-31">
+              to
+            <input
+              type="date"
+              id="start"
+              name="trip-start"
+              value="2018-07-22"
+              min="2018-01-01"
+              max="2018-12-31">
+          </div>
+          <label for="first">First Name (Optional)</label>
+          <div class="main-section_form-row">
+            <input type="text" name="first" id="first">
+          </div>
+          <label for="last">Last Name (Optional)</label>
+          <div class="main-section_form-row">
+            <input type="text" name="last" id="last">
+          </div>
+          <input type="submit" value="Search">
+        </form>
+      </section>
+    </div>
   </main>
   <footer class="footer"></footer>
   <script src="./js/index.js"></script>

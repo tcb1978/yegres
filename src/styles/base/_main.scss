@@ -1,0 +1,42 @@
+.main {
+  &__inner {
+    display: flex;
+    margin: 0 auto;
+    max-width: 90%;
+  }
+
+  &__nav {
+
+    &-list {
+      background-color: green;
+      flex: 1;
+      min-height: -webkit-fill-available;
+
+
+      &-item {
+        flex-grow: 1;
+        min-height: 2.25rem;
+        align-items: center;
+        display: flex;
+
+        &--active {
+          background-color: darkgreen;
+        }
+      }
+    }
+  }
+
+  &-section {
+    flex: 8;
+
+    &__masthead {
+      background-color: lightgrey;
+      display: flex;
+      justify-content: space-between;
+    }
+
+    &__primary {}
+
+    &__button {}
+  }
+}
